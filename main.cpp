@@ -6,9 +6,9 @@ using namespace std;
 
 int main() {
 
-double lowerLimit=0;
-double higherLimit=0;
-double step=0;
+float lowerLimit=0;
+float higherLimit=0;
+float step=0;
 
 cout<<"Please give in a lower limit, limit >= 0: 10\n\n";
 while(!(cin >> lowerLimit) || lowerLimit < 0 || lowerLimit > 500)
@@ -36,9 +36,16 @@ cout<<endl;
 cout<<"Celsius\t"<<"Fahrenheit"<<endl;
 cout<<"-------\t"<<"----------"<<endl<<endl;
 
-while(lowerLimit != higherLimit)
+float answer=lowerLimit;
+
+while(lowerLimit <= higherLimit)
 {
-    cout<
+    std::cout << std::fixed;
+    std::cout << std::setprecision(2);
+    answer = (lowerLimit * 1.8, lowerLimit + 32);
+    cout<<lowerLimit<<"\t"<<answer<<endl;
+    lowerLimit = lowerLimit + step;
+
 }
 
 
